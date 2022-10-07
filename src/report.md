@@ -22,3 +22,19 @@
 `cat /etc/hostname`
 
 2. _Временная зона_
+- ![Set-timezone](./Pictures/Part_3_.Setting_up_the_OS_network_1_set_timezone.png)
+- Для установки временной зоны, соответствующей определенному местоположению,
+используем команду `sudo timedatectl set-timezone Europe/Moscow`
+- ![Check-timezone](./Pictures/Part_3_.Setting_up_the_OS_network_2_check_timezone.png)
+- Чтобы узнать какая временная зона установлена используем команду
+`timedatectl`
+
+3. _Сетевые интерфейсы_
+- ![Show network interfaces](./Pictures/Part_3_.Setting_up_the_OS_network_3_show_network_interfaces.png)
+- Для просмотра сетевых интерфейсов используем команду 
+`ip -br a show` (_-br brief_ для вывода в кратком виде)
+- _lo (loopback device)_ – локальный виртуальный интерфейс, использующийся для отладки сетевых программ и запуска серверных приложений на локальной машине.
+
+- ![IP from DHCP](./Pictures/Part_3_.Setting_up_the_OS_network_4_ip_from_dhcp.png)
+- Чтобы получить IP-адрес текущего устройства от DHCP-сервера используем команду
+`sudo dhclient -v interfacename` (в данном случае _enp0s3_)
