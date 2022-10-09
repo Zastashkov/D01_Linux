@@ -63,6 +63,7 @@
 - ![Set static ip, gw, dns settings check](./Pictures/Part_3_.Setting_up_the_OS_network_10_ip_settings_check.png)
 - Для сохранения настроек, используем следующую команду:
 `sudo netplan apply`. Если в файле конфигурации есть ошибки, вы увидите сообщение об этом. Используя эту команду, `reboot` делать необязательно. 
+
 - ![Set static ip, gw, dns settings check](./Pictures/Part_3_.Setting_up_the_OS_network_11_ip_settings_check_settings.png)
 - Проверяем настройки
 - ![Set static ip, gw, dns settings check](./Pictures/Part_3_.Setting_up_the_OS_network_12_ip_settings_check_ping.png)
@@ -74,3 +75,8 @@
 
 - ![Updates are checked](./Pictures/Part_4_.OS_Update_2_updates_checked.png)
 - Вводим команду `sudo apt update`, видим, что доступных обновлений нет
+
+## Part 5. Using the sudo command
+- `sudo` - (substitute user and do) позволяет строго определенным пользователям выполнять указанные команды с административными привилегиями&
+- ![sudo](./Pictures/Part_5_.Using_the_sudo_command_1_changing_hostname.png)
+- Чтобы выполнить команду от имени другого пользователя ставим флаг -u. `sudo -u elektrab hostnamectl set-hostname newhostname.`
