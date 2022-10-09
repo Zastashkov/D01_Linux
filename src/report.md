@@ -77,6 +77,11 @@
 - Вводим команду `sudo apt update`, видим, что доступных обновлений нет
 
 ## Part 5. Using the sudo command
-- `sudo` - (substitute user and do) позволяет строго определенным пользователям выполнять указанные команды с административными привилегиями&
+- `sudo` - (substitute user and do) позволяет строго определенным пользователям выполнять указанные команды с административными привилегиями.
 - ![sudo](./Pictures/Part_5_.Using_the_sudo_command_1_changing_hostname.png)
 - Чтобы выполнить команду от имени другого пользователя ставим флаг -u. `sudo -u elektrab hostnamectl set-hostname newhostname.`
+
+## Part 6. Installing and configuring the time service
+- ![Synchronize time](./Pictures/Part_6_.Installing_and_configuring_the_time_service_1_set_time.png)
+- Для синхронизации времени используем команду 
+`sudo timedatectl set-ntp 1`. Для отключения вместо 1 ставим 0.
