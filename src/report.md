@@ -35,6 +35,36 @@
 `ip -br a show` (_-br brief_ для вывода в кратком виде)
 - _lo (loopback device)_ – локальный виртуальный интерфейс, использующийся для отладки сетевых программ и запуска серверных приложений на локальной машине.
 
+4. _DHCP_ 
 - ![IP from DHCP](./Pictures/Part_3_.Setting_up_the_OS_network_4_ip_from_dhcp.png)
 - Чтобы получить IP-адрес текущего устройства от DHCP-сервера используем команду
 `sudo dhclient -v interfacename` (в данном случае _enp0s3_)
+- DHCP - DynamicHost Configuration Protocol (протокол динамической настройки узла).
+- ![Check IP](./Pictures/Part_3_.Setting_up_the_OS_network_5_check_ip.png)
+- Проверяем IP командой `ip route`
+
+5. _Внешний, внутренний IP адрес шлюза_ 
+- ![External IP gateway](./Pictures/Part_3_.Setting_up_the_OS_network_6_external_ip.png)
+- Для проверки внешнего адреса шлюза используем команду 
+`wget -qO- eth0.me`
+- ![Internal IP gateway](./Pictures/Part_3_.Setting_up_the_OS_network_7_internal_ip.png)
+- Для проверки внутреннего адреса шлюза хватит и
+`ifconfig`
+
+6. _Статичные настройки ip, gw, dns_ 
+- ![Set static ip, gw, dns settings](./Pictures/Part_3_.Setting_up_the_OS_network_8_ip_settings.png)
+- Чтобы изменить сетевые настройки (ip, gw, dns), заходим в текстовый файл
+`sudo vim /etc/netplan/00-installer-config.yaml`
+
+- ![Set static ip, gw, dns settings VIM](./Pictures/Part_3_.Setting_up_the_OS_network_9_ip_settings_vim.png)
+- Отключаем DHCP, добавляем все необходимое
+
+7. _Проверяем настройки_ 
+- ![Set static ip, gw, dns settings check](./Pictures/Part_3_.Setting_up_the_OS_network_10_ip_settings_check.png)
+- Для сохранения настроек, используем следующую команду:
+`sudo netplan apply`. Если в файле конфигурации есть ошибки, вы увидите сообщение об этом. Используя эту команду, `reboot` делать необязательно. 
+- ![Set static ip, gw, dns settings check](./Pictures/Part_3_.Setting_up_the_OS_network_11_ip_settings_check_settings.png)
+- Проверяем настройки
+- ![Set static ip, gw, dns settings check](./Pictures/Part_3_.Setting_up_the_OS_network_12_ip_settings_check_ping.png)
+- Используя команду `ping ... -c` проверяем корректность настройки сети. -c нужен для указания количества отсылаемых пакетов.
+
