@@ -69,3 +69,8 @@
 - Используя команду `ping ... -c` проверяем корректность настройки сети. -c нужен для указания количества отсылаемых пакетов.
 
 ## Part 4. OS Update
+- ![System is updating](./Pictures/Part_4_.OS_Update_1_updating.png)
+- После ввода команды `sudo apt update` и подтверждения расходования пространства на диске система начнет обновляться
+
+- ![Updates are checked](./Pictures/Part_4_.OS_Update_2_updates_checked.png)
+- Вводим команду `sudo apt update`, видим, что доступных обновлений нет
