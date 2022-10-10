@@ -85,3 +85,4 @@
 - ![Synchronize time](./Pictures/Part_6_.Installing_and_configuring_the_time_service_1_set_time.png)
 - Для синхронизации времени используем команду 
 `sudo timedatectl set-ntp 1`. Для отключения вместо 1 ставим 0.
+Obsidian? п
