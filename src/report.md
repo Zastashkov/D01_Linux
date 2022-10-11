@@ -88,15 +88,15 @@
 
 ## Part 7. Installing and using text editors
 1. **VIM**
-- ![Vim save and quit](Part_7_.Installing_and_using_text_editors_1_vim_save_and_quit.png)
+- ![Vim save and quit](./Pictures/Part_7_.Installing_and_using_text_editors_1_vim_save_and_quit.png)
 - Для того, чтобы начать редактировать содержимое файла нужно нажать `i`. Чтобы сохранить и выйти, необходимо нажать `esc` и набрать `:wq`.
 
-- ![Vim just quit](Part_7_.Installing_and_using_text_editors_2_vim_just_quit.png)
+- ![Vim just quit](./Pictures/Part_7_.Installing_and_using_text_editors_2_vim_just_quit.png)
 - Для того, чтобы выйти из файла без сохранения изменений необходимо нажать `esc` и набрать `:q!`.
 
 > Квалификатор ! говорит Vim принудительно выполнить операцию.
 
-- ![Vim find a word](Part_7_.Installing_and_using_text_editors_3_vim_find_a_word.png)
+- ![Vim find a word](./Pictures/Part_7_.Installing_and_using_text_editors_3_vim_find_a_word.png)
 - Для поиска слова используем конструкцию: `/ word`.
 
 - ![Vim find a word and replace](./Pictures/Part_7_.Installing_and_using_text_editors_4_vim_find_a_word_and_replace.png)
