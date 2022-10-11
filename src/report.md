@@ -1,4 +1,4 @@
-## Part 1. Installation of the OS
+**## Part 1. Installation of the OS
 - ![Installation of the OS](./Pictures/Part_1_.Installation_of_the_OS.png)
 - Вывод версии Ubuntu через команду 
 `cat /etc/issue`
@@ -85,4 +85,58 @@
 - ![Synchronize time](./Pictures/Part_6_.Installing_and_configuring_the_time_service_1_set_time.png)
 - Для синхронизации времени используем команду 
 `sudo timedatectl set-ntp 1`. Для отключения вместо 1 ставим 0.
-Check hotkeys and new obsidian
+
+## Part 7. Installing and using text editors
+1. **VIM**
+- ![Vim save and quit](Part_7_.Installing_and_using_text_editors_1_vim_save_and_quit.png)
+- Для того, чтобы начать редактировать содержимое файла нужно нажать `i`. Чтобы сохранить и выйти, необходимо нажать `esc` и набрать `:wq`.
+
+- ![Vim just quit](Part_7_.Installing_and_using_text_editors_2_vim_just_quit.png)
+- Для того, чтобы выйти из файла без сохранения изменений необходимо нажать `esc` и набрать `:q!`.
+
+> Квалификатор ! говорит Vim принудительно выполнить операцию.
+
+- ![Vim find a word](Part_7_.Installing_and_using_text_editors_3_vim_find_a_word.png)
+- Для поиска слова используем конструкцию: `/ word`.
+
+- ![Vim find a word and replace](./Pictures/Part_7_.Installing_and_using_text_editors_4_vim_find_a_word_and_replace.png)
+- Для поиска слова и замены его на другое используем конструкцию: 
+`:s/wordToFind/wordToReplace`.
+- [Статья с описанием всех опций по замене](https://routerus.com/vim-find-replace/#:~:text=%D0%92%20Vim%20%D0%B2%D1%8B%20%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%D0%B5%20%D0%BD%D0%B0%D0%B9%D1%82%D0%B8,%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%20%D0%BD%D0%B0%D0%B6%D0%BC%D0%B8%D1%82%D0%B5%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D1%83%20%C2%ABEsc%C2%BB.)
+
+2. **NANO**
+- ![Nano save and quit](./Pictures/Part_7_.Installing_and_using_text_editors_5_nano_save_and_quit.png)
+-  Для выхода жмем `ctrl + x`, после этого nano предложит сохранить файл, пишем "Y".
+
+- ![Nano just quit](./Pictures/Part_7_.Installing_and_using_text_editors_6_nano_just_quit.png)
+-  Для выхода жмем `ctrl + x`, после этого nano предложит сохранить файл, пишем "N".
+
+- ![Nano find a word](./Pictures/Part_7_.Installing_and_using_text_editors_7_nano_find_a_word.png)
+-  Для поиска слова жмем `ctrl + w`, после этого вводим нужное слово и нажимаем `enter`
+
+- ![Nano find a word and replace](./Pictures/Part_7_.Installing_and_using_text_editors_8_nano_find_a_word_and_replace.png)
+-  Для поиска слова жмем `ctrl + r`, после этого вводим слово для поиска, нажимаем `enter`, вводим слово, на которое нужно заменить.
+
+3. **JOE**
+- ![Joe save and quit](./Pictures/Part_7_.Installing_and_using_text_editors_9_joe_save_and_quit.png)
+-  Для выхода жмем `ctrl + k` и нажимаем `q`, *Joe* предложит выбрать сохранять файл или нет, жмем "y".
+
+- ![Joe just quit](./Pictures/Part_7_.Installing_and_using_text_editors_10_joe_just_quit.png)
+-  Для выхода жмем `ctrl + k` и нажимаем `q`, *Joe* предложит выбрать сохранять файл или нет, жмем "n".
+
+- ![Joe find a word](./Pictures/Part_7_.Installing_and_using_text_editors_11_joe_find_a_word.png)
+-  Для того чтобы найти слово жмем `ctrl + k` и нажимаем `f`.
+
+- ![Joe find a word and replace](./Pictures/Part_7_.Installing_and_using_text_editors_12_joe_find_a_word_and_replace.png)
+-  Для того чтобы найти слово жмем `ctrl + k` и нажимаем `f`. Далее жмем `R` и вводим слово на которое хотим заменить наше искомое.
+
+## Part 8. Installing and basic setup of the SSHD service
+1. Установка
+`sudo apt install openssh-server`
+2. Автостарт ssh при запуске 
+`sudo systemctl enable ssh`
+- ![Check auto-ssh](./Pictures/Part_8_.SSHD_check_ssh.png)
+Проверяем через команду `systemctl list-units --type services`:
+
+Для старта службы используем команду:
+`sudo systemctl start ssh`
