@@ -188,30 +188,30 @@
 - **pid процесса, занимающего больше всего процессорного времени:** 6009
 ---
 - **Htop**
-![Uptime](./Pictures/Part_9_.top_htop_2_htop_sorted_by_pid.png)
+- ![Uptime](./Pictures/Part_9_.top_htop_2_htop_sorted_by_pid.png)
 - Сортировка по PID
-![PERCENT_CPU](./Pictures/Part_9_.top_htop_3_htop_sorted_by_cpu.png)
+- ![PERCENT_CPU](./Pictures/Part_9_.top_htop_3_htop_sorted_by_cpu.png)
 - Сортировка по PERCENT_CPU
-![PERCENT_CPU](./Pictures/Part_9_.top_htop_4_htop_sorted_by_mem.png)
+- ![PERCENT_CPU](./Pictures/Part_9_.top_htop_4_htop_sorted_by_mem.png)
 - Сортировка по PERCENT_MEM
-![TIME](./Pictures/Part_9_.top_htop_5_htop_sorted_by_time.png)
+- ![TIME](./Pictures/Part_9_.top_htop_5_htop_sorted_by_time.png)
 - Сортировка по TIME
-![SSHD](./Pictures/Part_9_.top_htop_6_htop_sshd.png)
+- ![SSHD](./Pictures/Part_9_.top_htop_6_htop_sshd.png)
 - sshd процессы
-![syslog](./Pictures/Part_9_.top_htop_7_htop_syslog_search.png)
+- ![syslog](./Pictures/Part_9_.top_htop_7_htop_syslog_search.png)
 - syslog search
-![add propetries](./Pictures/Part_9_.top_htop_8_htop_add_propetries.png)
+- ![add propetries](./Pictures/Part_9_.top_htop_8_htop_add_propetries.png)
 - Через f2 добавляем значения 
-![propetries are added](./Pictures/Part_9_.top_htop_9_htop_properties_are_added.png)
+- ![propetries are added](./Pictures/Part_9_.top_htop_9_htop_properties_are_added.png)
 - Значения добавлены
 
 ## Part 10. Using the fdisk utility
-![fdisk info](./Pictures/Part_10_.fdisk_1_L.png)
+- ![fdisk info](./Pictures/Part_10_.fdisk_1_L.png)
 - **Название:** /dev/sda
 - **Размер:** 10 GiB, 10737418240 bytes
 - **Количество секторов:** 20971520
 - **Размер swap:** 1.5 GiB
-![fdisk info](./Pictures/Part_10_.fdisk_2_swap.png)
+- ![fdisk info](./Pictures/Part_10_.fdisk_2_swap.png)
 - ```swapon -s```
 
 ## Part 11. Using the df utility
@@ -236,3 +236,14 @@
 
 - ![du command](./Pictures/Part_12_.du_2_var_log.png)
 - вывод содержимого папки `/var/log/` через `*`
+
+## Part 13. Installing and using the ncdu utility
+- ![ncdu home](./Pictures/Part_13_.ncdu_1_home.png)
+- Директория home
+- ![ncdu var](./Pictures/Part_13_.ncdu_2_var.png)
+- Директория var
+- ![ncdu var/log](./Pictures/Part_13_.ncdu_3_var_log.png)
+- Директория var/log/
+- Вывод команды ncdu dirname, в данном случае /home, /var, /var/log.
+
+## Part 14. Working with system logs
