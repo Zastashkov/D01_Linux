@@ -242,8 +242,12 @@
 - Директория home
 - ![ncdu var](./Pictures/Part_13_.ncdu_2_var.png)
 - Директория var
-- ![ncdu var/log](./Pictures/Part_13_.ncdu_3_var_log.png)
+
 - Директория var/log/
 - Вывод команды ncdu dirname, в данном случае /home, /var, /var/log.
 
 ## Part 14. Working with system logs
+- ![system log var/log/auth.log](./Pictures/Part_14_.system_log_1_auth.png)
+- Время последней успешной авторизации 13:58:45, имя пользователя root
+- ![ssh reload](./Pictures/Part_14_.system_log_2_ssh_reload.png)
+- Сообщение об успешном перезапуске ssh 
