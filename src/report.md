@@ -260,3 +260,4 @@
 - ![uptime](./Pictures/Part_15_.cron_2_uptime.png)
 - Uptime выполняется каждые две минуты
 - ![no cron commands](./Pictures/Part_15_.cron_3_no_commands.png)
+- Удаляем команду
