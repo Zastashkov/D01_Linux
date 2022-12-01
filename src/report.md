@@ -248,6 +248,6 @@
 
 ## Part 14. Working with system logs
 - ![system log var/log/auth.log](./Pictures/Part_14_.system_log_1_auth.png)
-- Время последней успешной авторизации 13:58:45, имя пользователя root
+- Время последней успешной авторизации - 13:58:45, имя пользователя - `root`, метод входа в систему - sudo
 - ![ssh reload](./Pictures/Part_14_.system_log_2_ssh_reload.png)
 - Сообщение об успешном перезапуске ssh 
