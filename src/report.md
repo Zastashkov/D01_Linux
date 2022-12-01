@@ -1,4 +1,4 @@
-**## Part 1. Installation of the OS
+## Part 1. Installation of the OS
 - ![Installation of the OS](./Pictures/Part_1_.Installation_of_the_OS.png)
 - Вывод версии Ubuntu через команду 
 `cat /etc/issue`
@@ -251,3 +251,12 @@
 - Время последней успешной авторизации - 13:58:45, имя пользователя - `root`, метод входа в систему - sudo
 - ![ssh reload](./Pictures/Part_14_.system_log_2_ssh_reload.png)
 - Сообщение об успешном перезапуске ssh 
+
+## Part 15. Using the CRON job scheduler
+- ![cron commands](./Pictures/Part_15_.cron_1_commands.png)
+- Задание uptime каждые две минуты
+- `crontab - e` (редактировать файл)
+- `crontab -l` (показать список задач)
+- ![uptime](./Pictures/Part_15_.cron_2_uptime.png)
+- Uptime выполняется каждые две минуты
+- ![no cron commands](./Pictures/Part_15_.cron_3_no_commands.png)
